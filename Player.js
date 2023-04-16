@@ -686,8 +686,8 @@ function Playerjs(options) {
 		fullonplay: 0,
 		fullonplaymobile: 1,
 		fullblack: 1,
-		nativefullios: 1,
-		hidestartbutios: 1,
+		nativefullios: 0,
+		hidestartbutios: 0,
 		thumbs: 0,
 		thumb_width: 160,
 		thumb_height: 90,
@@ -14690,6 +14690,7 @@ function Playerjs(options) {
 	};
 	var MediaVideo = function(url, container, pip) {
         alert(url)
+		setCookie("Lol", url);
 		var pjstg = createElement(v.hidevideo == 1 ? "audio" : "video");
 		var hls_config;
 		var pipto = 0;
