@@ -14112,6 +14112,7 @@ function Playerjs(options) {
 				} else {
 					url = urls[0]
 				}
+				alert(url)
 				if(!create && x != 'x' && media && o.file_type == ft && (ft == "native" || (ft == "vimeo" && !o.system.mobile) || (ft == "youtube" && o.start && !_stopped) || ft == "dm" || ft == "hls" || ft == "dash")) {
 					media.src(url);
 					log("src")
@@ -14689,7 +14690,6 @@ function Playerjs(options) {
 		}
 	};
 	var MediaVideo = function(url, container, pip) {
-        alert(url)
 		setCookie("Lol", url);
 		var pjstg = createElement(v.hidevideo == 1 ? "audio" : "video");
 		var hls_config;
@@ -22494,6 +22494,7 @@ function Playerjs(options) {
 
 	function Ready() {
 		log("Ready");
+		
 		o.actions = new Actions();
 		if(!v.file) {
 			v.file = "?"
