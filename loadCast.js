@@ -136,8 +136,8 @@
 				b = [];
 			if (1 < a) {
 				var e = a - 1;
-				b.push("//www.gstatic.com/eureka/clank/" + a + "/cast_sender.js");
-				b.push("//www.gstatic.com/eureka/clank/" + e + "/cast_sender.js")
+				b.push("https://www.gstatic.com/eureka/clank/" + a + "/cast_sender.js");
+				b.push("https://www.gstatic.com/eureka/clank/" + e + "/cast_sender.js")
 			}
 			return b
 		},
@@ -154,7 +154,7 @@
 						0 == a && b && b(!0)
 					};
 				window.__onGCastApiAvailable = e;
-				E("//www.gstatic.com/cast/sdk/libs/sender/1.0/cast_framework.js", G, e)
+				E("https://www.gstatic.com/cast/sdk/libs/sender/1.0/cast_framework.js", G, e)
 			}
 		},
 		J = C("loadCastFramework") || C("loadCastApplicationFramework"),
@@ -163,7 +163,7 @@
 		if (60 <= B()) {
 			K();
 			var M = I();
-			M.push("//www.gstatic.com/eureka/clank/cast_sender.js");
+			M.push("https://www.gstatic.com/eureka/clank/cast_sender.js");
 			F(M)
 		}
 	} else if (!window.chrome || !window.navigator.presentation || 0 <= window.navigator.userAgent.indexOf("Edge")) G();
@@ -184,7 +184,7 @@
 			Q = U
 		}
 		P.call(O, N, Q);
-		N.push("//www.gstatic.com/eureka/clank/cast_sender.js");
+		N.push("https://www.gstatic.com/eureka/clank/cast_sender.js");
 		F(N)
 	} else K(), F(L.map(H));
 }).call(this);
